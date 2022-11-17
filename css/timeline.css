@@ -92,6 +92,7 @@ institute {
   font-weight: bold;
   margin-bottom: 8px;
 }
+
 degree {
   display: block;
   color: yellow;
@@ -101,7 +102,6 @@ degree {
   font-weight: lighter;
   margin-bottom: 8px;
 }
-
 
 /* EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -142,9 +142,15 @@ degree {
   .timeline ul li div {
     width: 250px;
   }
+
   .timeline ul li:nth-child(even) div {
     left: -289px;
+    width: 300px;
     /*250+45-6*/
+  }
+
+  .timeline ul li:nth-child(odd) div {
+    width: 300px;
   }
 }
 
@@ -152,12 +158,20 @@ degree {
   .timeline ul li {
     margin-left: 20px;
   }
+
   .timeline ul li div {
     width: calc(100vw - 91px);
   }
+
+  .timeline ul li:nth-child(odd) div {
+    width: 300px;
+  }
+
   .timeline ul li:nth-child(even) div {
     left: 45px;
+    width: 300px;
   }
+
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
